@@ -1,0 +1,1571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uomo | Modern & Multipurpose eCommerce HTML5 Template</title>
+
+    <style>
+        *{
+            
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            
+            
+        }
+        button:hover{
+            background-color: rgb(197, 194, 194);
+            cursor: pointer;
+        }
+        
+        body{
+            /* margin: 0; */
+            /* padding: 0; */
+            text-align: center;
+            /* height: 100vh;
+            width: 100vh;             */
+            
+        }
+        li:hover{
+            cursor: pointer;
+        }
+        a{
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        
+        input{
+            background-color: none;
+            border: none;
+            font-size: 1rem;
+            width: 100%;
+            height: 2rem;
+            padding: 1rem
+            
+
+        }
+
+        header{
+            
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            flex: 1;
+            width: 100%;
+            max-width: 100%;
+            position: sticky;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 2;
+        }
+        .main-header{
+           
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            /* background-color: black; */
+            background-color: beige;
+            max-height: 90px;
+            min-height: 60px;
+            width: 100%;
+            flex: 1;
+            padding: 0 15px 0 15px;
+            margin: 0 auto 0 auto;
+        }
+
+        .head-info{
+            position: relative;
+            display: flex;
+            /* background-color: beige; */
+            min-height: 28px;
+            max-height: 90px;
+            max-width: 1410px;
+            min-width: auto;
+            justify-content: center;
+            align-items: center;
+            
+            flex: 1;
+            padding: 30px 0 24px 0px;
+            margin: 0;
+
+            /* min-height: 60px;
+            max-height: 90px; */
+        }
+
+        .uomo-logo{
+            display: flex;
+            justify-content: center;
+            width: 112px;
+            height: 28px;
+            cursor: pointer;
+            margin: 0;
+        }
+        
+        ul{
+            list-style-type: none;
+            align-items: center;
+            
+            
+        }
+
+        li{
+            display: flex;
+            justify-content: center;
+            
+            align-items: center;
+            float: left;
+            padding: 10px;
+            padding-left: 25px;
+            padding-right: 25px;
+            cursor: pointer;
+        }
+        li:hover{
+            
+            text-decoration: underline;
+            /* .li a:hover:before, .SMN_effect-46 a:focus:before, .SMN_effect-46 a:active:before {
+	-webkit-transform: scaleX(1);
+	transform: scaleX(1);
+	-webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+	transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+
+            }
+             */
+            
+        }
+        .home-list{
+            display: flex;
+            align-items: center;
+        }
+
+        .header-tools{
+            display: flex;
+            align-items: center;
+            
+            /* padding-left: 100px; */
+            
+        }
+
+        #header-tools-ul{
+            padding-left: 200px;
+        }
+        .menu-bar{
+            padding-left: 25px;
+        }
+
+        .shopping-bag{
+            display: none;
+        }
+
+        .slide-show-div{
+            height: 80vh;
+            
+            display: flex;
+            
+            width: 100wh;
+            padding: 0 60px 0 60px;
+            
+            
+        }
+
+        .slide-show{
+            width: 100%;
+            display: flex;
+            
+            background-image: url(background/slideshow-pattern.png);
+            background-color: #f5e6e0;
+            
+        }
+        .slidshowch1{
+            right: 20%; bottom: -16px; position: absolute; z-index: -1; 
+
+        }
+
+        .first-set{
+            margin-top:5vh ;
+            height: 80vh;
+            flex: 1;
+            /* background-color: teal; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            /* position: relative; */
+            
+            
+
+        }
+        .parent-first{
+            display: flex;
+            
+            flex: 1;
+            
+            
+            
+            height: 70vh;
+            width: 100%;
+            /* position: absolute;
+            top: 0;
+            bottom: 0; */
+            
+            /* background-color: blueviolet; */
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+        .first-child{
+            display: flex;
+            
+            flex: 1;
+            justify-content: left;
+            align-items: end;
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            
+            line-height: 3rem;
+
+            height: 100%;
+            width: 100%;
+            
+            
+            background-image: url(models/collection_grid_1.jpg);
+        
+            background-size: cover;
+            background-position: right;
+            
+            /* background-image: url(models/collection_grid_1.jpg);
+            background-size: cover; */
+
+        }
+
+        .second-child{
+            display: flex;
+            flex: 1;
+            flex-direction: column;
+            
+        
+            
+            
+            width: 100%;
+            height: 100%;
+            /* background-color: bisque; */
+            /* padding-left: 2%; */
+            margin-left: 1%;
+        }
+        
+        /* .s1, .s3, .s4 {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            background-image: url(models/collection_grid_2.jpg) url(models/collection_grid_3.jpg) url();
+        } */
+        .s1{ background-image: url(models/collection_grid_2.jpg);
+            
+            background-position:center ;
+            justify-content: left;
+            align-items: end;
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            
+            line-height: 3rem;
+
+            background-repeat: no-repeat;
+            
+            
+            background-size: cover;
+        
+        display: flex;
+        flex: 1;
+        /* padding: 0 0 0 1%; */
+
+        
+        }
+        .s2{
+            height: 100%;
+            width: 100%;
+            display: flex;
+            
+            flex: 1 ;
+            flex-direction: row;
+
+            
+            
+            
+            /* background-color: blue; */
+            padding: 2% 0 0 0;
+        }
+        
+        .s3{
+            background-image: url(models/collection_grid_3.jpg);
+            height: 100%;
+            width: 100%;
+            display: flex;
+            background-size: cover;
+            background-position: right;
+            flex: 1;
+            margin-right: 2%;
+            justify-content: left;
+            align-items: end;
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            
+            line-height: 3rem;
+        }
+        .s4 {
+            background-color: gold;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex: 1;padding-left: 2%;
+            justify-content: left;
+            align-items: end;
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            
+            line-height: 3rem;
+        }
+
+        .product-grid-section{
+            display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; height: 100vh; justify-content: space-around;margin: 0 10% 0 10%;
+            transition: background-image 5s;
+            overflow: hidden;
+        }
+        .product-grid-section > div{
+                height: 100%;
+                margin:5%;
+
+
+            }
+
+
+        .demo{
+            grid-template-columns: 1fr 1fr; position: relative
+
+        }
+        .demo-button{
+            opacity: 0;
+            position: absolute; left: 0%; right: 50; bottom: 40%; height: 3rem; background-color: white; width: 100%; border: none;
+        }
+        
+        .demo:hover .demo-button{
+            opacity: 1;
+        }
+
+        .demo:hover .addtocartbutton{
+            opacity: 1;
+        }
+
+
+
+        .model-1 {
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             display: grid;
+            height: 75%; 
+            transition: background-image 2s;  
+            
+            /* z-index: -1; */
+        }
+        
+        .model-1:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+
+        .model-2{
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             /* display: grid; */
+            height: 80%; 
+            transition: background-image 2s;    
+        }
+        
+        .model-2:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+
+        .model-3{
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             /* display: grid; */
+            height: 80%; 
+            transition: background-image 2s;    
+        }
+        
+        .model-3:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+
+        .model-4{
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             /* display: grid; */
+            height: 80%; 
+            transition: background-image 2s;    
+        }
+        
+        .model-4:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+
+        .model-5{
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             /* display: grid; */
+            height: 80%; 
+            transition: background-image 2s;    
+        }
+        
+        .model-5:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+
+        .model-6{
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             /* display: grid; */
+            height: 80%; 
+            transition: background-image 2s;    
+        }
+        
+        .model-6:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+
+        .model-7{
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             /* display: grid; */
+            height: 80%; 
+            transition: background-image 2s;    
+        }
+        
+        .model-7:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+
+        .model-8{
+            background-image: url(models/product_1.jpg);
+             background-position: top; 
+             background-size: cover; 
+             /* display: grid; */
+            height: 80%; 
+            transition: background-image 2s;    
+        }
+        
+        .model-8:hover{
+            background-image:url(models/product_1-1.jpg);
+            /* background-color: black;
+            background-image: none; */    
+        }
+        .addtocartbutton{
+            background-color: white; border: none; height: 3rem; padding: 0 2rem 0 2rem;
+            width: 20vw;
+            margin-top: 70%;
+            opacity: 1;
+            
+        }
+
+        .addtocart{
+            /* z-index: ; */
+            position: absolute; bottom: 0; left: 0; top: 0; right: 0;
+            opacity: 0;
+            align-items: center;
+
+        }
+        
+        
+        .discover-more-section{
+
+            font-size: 1.5rem;
+            justify-content: center;
+            align-items: center;
+            padding: 5% 0;
+            
+        }
+        .deal-timer-section{
+            display: flex; margin: 4%; background-image: url(models/deal_timer_bg.jpg);background-position: center;background-size: cover; height: 70vh;
+            justify-content: left;
+            align-items: center;
+            text-align: left;
+            line-height: 4rem;
+            padding-left: 2rem;
+            
+
+        }
+        .banner-sections{
+            display: flex; flex-direction: row; flex: 1 1;  height: 50vh; margin: 10% 8% 0 8%;
+
+        }
+        .banner1{
+            display: flex; flex: 1; background-image: url(models/banner_2.jpg);background-position: center;background-size: cover; margin:2%;
+            justify-content: left;
+            align-items: end;
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            color: black;
+            line-height: 3rem;
+
+        }
+        .banner2{
+            display: flex; flex: 1;background-image: url(models/banner_1.jpg);background-position: center;background-size: cover; margin: 2%;
+            justify-content: left;
+            align-items: end;
+            text-align: left;
+            padding-left: 30px;
+            padding-bottom: 20px;
+            color: white;
+            line-height: 3rem;
+
+        }
+
+        .lim-ed{
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            margin-top: 5%;
+            display: flex; flex: 1; height: 10vh;
+        }
+
+        .accessories{
+            display: flex; flex-direction: row; flex: 1 1 1 1; height: 50vh; 
+            /* background-color: */
+              margin-left: 10%; margin-right: 10%;
+              
+
+        }
+
+        .acc1p:hover .demo-button{
+            opacity: 1;
+            background-color: white;
+        }
+        .acc2p:hover .demo-button{
+            opacity: 1;
+            background-color: white;
+        }
+        .acc3p:hover .demo-button{
+            opacity: 1;
+            background-color: white;
+            
+
+        }
+        .acc4p:hover .demo-button{
+            opacity: 1;
+            background-color: white;
+        }
+        .accessories *{
+            margin-right: 5%;
+            
+        }
+        .acc1{
+            display: flex; flex: 1; background-image: url(models/product-0-1.jpg); background-position: center; background-size: cover;
+            
+            /* margin-right: 10%; */
+
+        }
+        .acc2{
+            display: flex; flex: 1; background-image: url(models/product-3-1.jpg); background-position: center; background-size: cover;
+            /* margin-right: 10%; */
+        }
+        .acc3{
+            display: flex; flex: 1; background-image: url(models/product-1-1.jpg); background-position: center; background-size: cover;
+            /* margin-right: 10%; */
+        }
+        .acc4{
+            display: flex; flex: 1; background-image: url(models/product-2-1.jpg); background-position: center; background-size: cover;
+
+        }
+        .accinfo{
+            display: grid;
+        }
+        .acc3p, .acc4p{
+            display: flex; flex: 1; flex-direction: column;
+        }
+
+        .royalblue-section{
+            display: flex; flex: 1; height: 20vh;  margin-left: 10%; margin-right: 10%; font-size: 3rem;justify-content: center; align-items: center;
+
+        }
+        .gray-section{
+            display: grid; grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; height: 65vh;  margin-left: 10%; margin-right: 10%; 
+
+        }
+        .gray-section * {
+                margin: 1%;
+                display: grid;
+                
+            }
+        .csseff {height: 100%; width: 100%; background-color: black; position: absolute;opacity: 0; left:0;right: 0; top: 0 ; bottom: 0; transition: opacity  2s;}
+
+        .csseff:hover{
+
+            opacity: .5;
+            
+
+        }
+        
+        .models1{background-image: url(models/insta1.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+
+        }
+        .models1:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models2{
+            background-image: url(models/insta2.jpg); background-size: cover; background-position: center; 
+            transition: box-shadow 1s ease-in-out;
+            
+
+
+        }
+        .models2:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models3{
+            background-image: url(models/insta3.jpg); background-size: cover;  background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models3:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models4{background-image: url(models/insta4.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models4:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models5{
+            background-image: url(models/insta5.jpg); background-size: cover;  background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models5:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models6{
+            background-image: url(models/insta6.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models6:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models7{
+            background-image: url(models/insta7.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models7:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models8{
+            background-image: url(models/insta8.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models8:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models9{
+            background-image: url(models/insta9.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models9:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models10{
+            background-image: url(models/insta10.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models10:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models11{
+            background-image: url(models/insta11.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models11:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+        .models12{
+            background-image: url(models/insta12.jpg); background-size: cover; background-position: center;
+            transition: box-shadow 1s ease-in-out;
+        }
+        .models12:hover{
+            box-shadow: inset 300px 0 0 0 rgba(255, 255, 255, 0.5);
+            
+        }
+
+        .end-3-logos{
+            display: flex; flex: 1 1 1;flex-direction: row; height: 30vh; margin-left: 10%; margin-right: 10%; padding: 5%;
+
+
+        }
+        
+
+        .seagreen-section{
+            display: grid; height: 50vh; grid-template-columns: 1fr 1fr 1fr 1fr 1fr;  background-color:rgb(194, 194, 194); padding-left: 10%; padding-right: 10%; padding-top: 2%;
+            justify-content: space-between;
+            line-height: 3rem;
+            line-break: auto;
+            justify-content: left;
+            align-items: start;
+            text-align: left;
+            column-gap: 1vw;
+            
+
+            
+        }
+        
+        .about{
+            display: grid;
+            
+            
+
+        }
+
+        .addinfo{
+            display: grid;
+            
+
+        }
+        .shop{
+            display: grid;
+           
+
+        }
+        .help{
+            display: grid;
+          
+
+        }
+        .subscribe{
+            display: grid;
+
+            
+        }
+
+
+    
+
+
+        /* .snip1268 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  color: #333333;
+  text-align: center;
+  background-color: #ffffff;
+  line-height: 1.6em;
+}
+.snip1268 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.snip1268 .image {
+  position: relative;
+}
+.image:hover{
+
+    
+    
+}
+.snip1268 img {
+  max-width: 100%;
+  vertical-align: top;
+  -webkit-transition: opacity 0.35s;
+  transition: opacity 0.35s;
+}
+.snip1268 .icons,
+.snip1268 .add-to-cart {
+  position: absolute;
+  left: 20px;
+  right: 20px;
+  opacity: 0;
+}
+.snip1268 .icons {
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.snip1268 .icons a {
+  width: 32.5%;
+  background: #ffffff;
+}
+.snip1268 .icons a:hover {
+  background: #000000;
+}
+.snip1268 .icons a:hover i {
+  color: #ffffff;
+  opacity: 1;
+}
+.snip1268 .icons i {
+  line-height: 46px;
+  font-size: 20px;
+  color: #000000;
+  text-align: center;
+  opacity: 0.7;
+  margin: 0;
+}
+.snip1268 .add-to-cart {
+  position: absolute;
+  bottom: 20px;
+  -webkit-transform: translateY(100%);
+  transform: translateY(100%);
+  font-size: 0.8em;
+  color: #000000;
+  line-height: 46px;
+  letter-spacing: 1.5px;
+  background-color: #ffffff;
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.snip1268 .add-to-cart:hover {
+  background: #000000;
+  color: #ffffff;
+}
+.snip1268 figcaption {
+  padding: 20px 20px 30px;
+}
+.snip1268 h2,
+.snip1268 p {
+  margin: 0;
+  text-align: left;
+}
+.snip1268 h2 {
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.snip1268 p {
+  margin-bottom: 15px;
+  font-size: 0.85em;
+  font-weight: 500;
+}
+.snip1268 .price {
+  font-size: 1.3em;
+  opacity: 0.5;
+  font-weight: 700;
+  text-align: right;
+}
+.snip1268:hover img,
+.snip1268.hover img {
+  opacity: 0.8;
+}
+.snip1268:hover .icons,
+.snip1268.hover .icons,
+.snip1268:hover .add-to-cart,
+.snip1268.hover .add-to-cart {
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+} */
+
+
+
+        
+        /* Add this CSS for the transition effect */
+
+
+
+        @media screen and (max-width:990px) {
+            
+            .main-header{
+                padding: 0;
+            }
+            .slide-show-div{
+                padding: 0;
+                height: 60vh;
+            }
+            .slide-show {
+                width: 100%;
+                padding: 0;
+                
+                
+                
+            }
+
+            .slidshowch1{
+                right: 0;
+                margin-left: 5vh;
+                }
+            .slidshowch1 > img{
+                width:75%;
+                
+            }
+            /* img{
+                height: 50%;
+                width: 80%;
+            } */
+            ul
+            {
+                display: none;
+
+            }
+            .uomo-logo{
+                justify-content: center;
+                
+                z-index: 2px;
+                
+            }
+            .menu-bar{
+                position: absolute;
+                left: 5%;
+            
+            }
+            .shopping-bag{
+                display: flex;
+                position: absolute;
+                right: 5%;
+            }
+            .first-set{
+                /* display: grid;
+                grid-template-columns: 1fr ;
+                
+                height: 120vh; */
+                       /* height: 300vh; */
+                display: flex;
+
+                height: 140vh;
+                
+
+
+            }
+            .parent-first {
+                /* display: grid;
+                grid-template-columns: 1fr;
+                height: 100%; */
+                display: flex;
+                flex-direction: column;
+                height: 130vh;
+            
+               
+                padding: 5%;
+                
+                
+                /* position: relative; */
+                
+                /* height: 300vh; */
+                margin: 0;
+                
+                
+                
+                
+            }
+            .first-child{
+                /* flex-direction: column;
+                flex: 1;
+                flex-grow: 1; */
+                /* width: 100%; */
+                /* height:  25%; */
+                
+                /* display: grid;
+                grid-template-columns: 1fr;
+                height: 30vh; */
+
+                flex: 1;
+                margin-bottom: 2%;
+                background-position: top;
+            }
+            .second-child{
+                /* display: grid;
+                grid-template-columns: 1fr; */
+                flex: 3;
+                flex-direction: column;
+                margin-left: 0%;
+                
+                
+                
+                
+            }
+            .s2{
+
+                flex: 2;
+                flex-direction: column;
+                
+                /* display: grid; 
+                grid-template-columns: 1fr; */
+                
+                
+                
+            }
+            .s1{
+                flex: 1;
+                background-position: right;
+                /* display: grid; 
+                grid-template-columns: 1fr;
+                height: 30vh; */
+                
+                
+            }
+            .s3{
+                flex: 1;
+                margin-bottom: 2%;
+                
+                
+                /* display: grid; 
+                grid-template-columns: 1fr;
+                height: 30vh; */
+                
+            }
+            .s4{
+                flex: 1;
+                /* display: grid; 
+                grid-template-columns: 1fr;
+                height: 30vh; */
+                
+            }
+
+            .product-grid-section{
+                grid-template-columns: 1fr 1fr;
+                height: 150vh;
+                margin: 0;
+                text-align: left;
+
+                padding: 0;
+                margin-left: 5%;
+                margin-right: 5%;
+                
+
+            }
+            /* .model-1{
+                height: 40vh;
+            } */
+            .product-grid-section *{
+                
+                
+
+            }
+
+            /* .model-1{
+                margin-left: 5vw;
+                height: 55%;
+                width: 35vw;
+                
+            }
+            .addtocartbutton{
+                margin-top: 80%;
+                width: 100%;margin-left: 0;
+            } */
+            
+
+            .deal-timer-section{
+                height: 35vh;
+
+            }
+
+            .banner-sections{
+                flex-direction: column;
+                flex: 1;
+                height: 600px;
+                
+            }
+            .banner1, .banner2{
+                margin: 0;
+            }
+            .accessories{
+                flex: 1 1; 
+            }
+            .acc3p, .acc4p, .acc3, .acc4, .accinfo {
+                display: none;
+                margin: 0;
+            }
+
+            .gray-section{
+                grid-template-columns: 1fr 1fr 1fr;
+            
+                
+            }
+            .gray-section *{
+                margin: 1%;
+                
+            }
+            .end-3-logos{
+                flex-direction: column;
+                height: 50vh;
+                padding: 6vh;
+
+            }
+            .seagreen-section{
+                grid-template-columns: 1fr 1fr;
+                
+                height: fit-content;
+            }
+            .end3{
+                height: 30%;
+                
+            }
+            .subscribe{
+                width: 200%;
+                
+                
+            }
+            /* .gray-section * {
+                background-color: rgb(11, 14, 14);
+                
+            } */
+        }
+
+        button:{
+            cursor: pointer; !important
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="main-header"> 
+            <div class="head-info">
+                <div class="uomo-logo">
+                    <img src="logo/logo.png" alt="">
+                </div>
+                <div class="home-list">
+                    <ul>
+                        <li>HOME</li>
+                        <li>SHOP</li>
+                        <li>BLOG</li>
+                        <li>PAGES</li>
+                        <li>ABOUT</li>
+                        <li>CONTACT</li>
+                    </ul>
+                    <div class="header-tools">
+                    <ul id="header-tools-ul">
+                        <li>
+                            <img src="logo/magnifying-glass-solid.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="logo/user-regular.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="logo/heart-regular.svg" alt="">
+                        </li>
+                        <li>
+                            <img src="logo/bag-shopping-solid.svg" alt="">
+                        </li>
+                    </ul>
+                    <div class="shopping-bag">
+                        <img src="logo/bag-shopping-solid.svg" alt=""></div>
+                    </div>
+                    <div class="menu-bar"><img src="logo/bars-solid.svg" alt=""></div>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <div class="slide-show-div">
+        <div class="slide-show" style="justify-content: left; align-items: center; text-align: left; padding-left: 5%; position: relative; z-index: -2;"> 
+            <div style="line-height: 3rem;">
+            <P style="color: red;">SUMMER 2020</P>
+            
+            <P style="font-size: xxx-large; font-weight: bolder">HELLO NEW SEASON</P>
+            
+            <p>LIMMITED TIME OFFER - UP RO 60% OFF & FREE SHIPPING</p>
+            <a href="";> DISCOVER MORE</a>
+            <div class="slidshowch1"> <img src="models/slideshow-character2.png" alt="" ></div>
+            </div>
+        </div>
+
+    </div>
+    <div class="first-set">
+        <div class="parent-first">
+            <div class="first-child">
+
+                <div>
+                    <p>Hot List</p>
+                    <p style="font-size: larger; font-size: 2rem;"><span style="font-weight: bolder;">WOMEN</span> COLLECTION</p>
+                    <p style="text-decoration: underline;">Shop Now</p> 
+                </div>
+              <!-- <img src="models/collection_grid_1.jpg" alt="" style="object-fit: cover;"> -->
+            </div>
+            <div class="second-child">
+                <div class="s1">
+                    <div>
+                        <p>Hot List</p>
+                        <p style="font-size: larger; font-size: 2rem;"><span style="font-weight: bolder;">MEN</span> COLLECTION</p>
+                        <p style="text-decoration: underline;">Shop Now</p> 
+                    </div>
+                </div>
+                <div class="s2">
+                    <div class="s3">
+                        <div>
+                            <p>Hot List</p>
+                            <p style="font-size: larger; font-size: 2rem;"><span style="font-weight: bolder;">KIDS</span> COLLECTION</p>
+                            <p style="text-decoration: underline;">Shop Now</p> 
+                        </div>
+                    </div>
+                    <div class="s4">
+                        <div>
+                            <p style="font-size: larger; font-size: 2rem;"><span style="font-weight: bolder;">E-GIFT </span>CARDS</p>
+                            <p>Surprise someone with the gift they
+                                really want.</p>
+                            <p style="text-decoration: underline;">Shop Now</p> 
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+    <div class="tan-section" style="display: flex; height: 100px; margin-top: 0; justify-content: center; align-items: center; "><div><p style="font-size:xx-large;">OUR TRENDY <span style="font-weight: bolder;">PRODUCTS</span></p></div></div>
+<div class="red-section" style="display: flex; height: 100px; justify-content: center; align-items: center;">
+    
+    <ul style="justify-content: center; align-items: center; display: flex;">
+        
+        <li>ALL</li>
+        <li>NEW ARRIVALS</li>
+        <li>BEST SELLER</li>
+        <li>TOP RATED</li>
+    
+    </ul>
+</div>
+<div class="product-grid-section">
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+
+
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+
+
+
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+
+    <div style="grid-template-columns: 1fr 1fr; position: relative; " class="demo">
+        <div class="model-1" style=""></div>
+        <button  class="demo-button" style="">add to cart</button>
+        <div style="display: grid;">
+            
+            <p>Dresses</p>
+            
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>
+
+
+<!-- <figure class="snip1268" style="grid-template-columns: 1fr 1fr;">
+    <div class="image">
+      <img src="models/product_1-1.jpg" alt="sq-sample4"/>
+  
+      <a href="#" class="add-to-cart">Add to Cart</a>
+    </div>
+    <figcaption>
+      <h2>Denim Shirt</h2>
+      <p>My family is dysfunctional and my parents won't empower me. Consequently I'm not self actualized.</p>
+      <div class="price">$65.00 </div>
+    </figcaption>
+  </figure> -->
+
+</div>
+<div class="discover-more-section"><p>discover more</p></div>
+<div class="deal-timer-section">
+    <div style="justify-content: left;">
+        <p style=" color: red;">
+        DEAL OF THE WEEK
+        </p>
+    
+        <p style="font-size: xxx-large; font-weight: bolder;">SPRING <span style="font-weight: lighter;">COLLECTION</span></p>
+    
+        <p>SHOP NOW</p>
+    </div>  
+</div>
+<div class="banner-sections">
+    <div class="banner1">
+        <div>
+            <p>
+                STARTING AT $39
+                
+                </p>
+                <p style="font-size: 2rem">Men's Sportswear</p>
+            <p style=" text-decoration: underline;">SHOP NOW</p>  
+        </div>   
+    </div>
+    <div class="banner2">
+        <div>
+            <p>
+                Starting At $19
+                
+                </p>
+                <p style="font-size: 2rem">Women's T-Shirts</p>
+            <p style="text-decoration: underline;">SHOP NOW</p>  
+        </div>   
+    </div>
+</div>
+<div class="lim-ed"> <p> LIMITED <span style="font-weight: bolder;">EDITION</span></p></div>
+<div class="accessories">
+        
+    <div class="acc1p" style="display: flex; flex: 1; flex-direction: column; position: relative; ">
+        <div class="acc1"></div>  
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            <p>Dresses</p>
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>  
+
+    <div class="acc2p" style="display: flex; flex: 1; flex-direction: column; position: relative;">
+        <div class="acc2"></div>  
+        <button  class="demo-button" >add to cart</button>
+        <div style="display: grid;">
+            <p>Dresses</p>
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>  
+    <div class="acc3p" style="position: relative;">
+        <div class="acc3"></div>  
+        <button  class="demo-button" >add to cart</button>
+        <div class="accinfo">
+            <p>Dresses</p>
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>  
+    
+    <div class="acc4p" style="position: relative;" >
+        <div class="acc4"></div>  
+        <button  class="demo-button" >add to cart</button>
+        <div class="accinfo">
+            <p>Dresses</p>
+            <p>Cropped Faux Leather Jacket</p>
+            <p>$29</p>   
+        </div>
+    </div>  
+</div>
+<div class="royalblue-section" >@UOMO</div>
+<div class="gray-section">
+    <div class="models1" >
+        <!-- <div style=" height: 100%; width: 20px; background-color: black; opacity: 0.5;">
+
+        </div> -->
+        
+    </div>
+    <div class="models2"  style="position: relative;">
+        <div class="csseff">
+
+        </div>
+        <div>
+
+        </div>
+
+    </div>
+    <div class="models3" ></div>
+    <div class="models4" ></div>
+    <div class="models5" ></div>
+    <div class="models6" ></div>
+    <div class="models7" ></div>
+    <div class="models8" ></div>
+    <div class="models9" ></div>
+    <div class="models10"></div>
+    <div class="models11"></div>
+    <div class="models12"></div>
+</div>
+<div class="end-3-logos">
+    <div style="display: flex;flex: 1; flex-direction: column;"> 
+        <img class="end3" src="logo/truck-solid(1).svg" alt="" >
+        <br>
+        <p>
+            FAST AND FREE DELIVERY
+        </p>
+        <p>Free delivery for all orders over $140</p>
+    </div>
+    <div style="display: flex; flex: 1; flex-direction: column;">
+    <img class="end3" src="logo/headset-solid(1).svg" alt="">
+    <br>
+        <p>
+            FAST AND FREE DELIVERY
+        </p>
+        <p>Free delivery for all orders over $140</p>
+    
+    </div>
+    <div style="display: flex; flex: 1; flex-direction: column;">
+    <img class="end3" src="logo/shield-solid.svg" alt="">
+    <br>
+        <p>
+            FAST AND FREE DELIVERY
+        </p>
+        <p>Free delivery for all orders over $140</p>
+</div>
+</div>
+<div class="seagreen-section">
+    <div class="addinfo">
+        <i><img src="logo/logo.png" alt=""></i>
+        <p>1418 River Drive, Suite 35 Cottonhall, CA 9622 United States</p>
+        <p>sale@uomo.com</p>
+        <p>+1 246-345-0695</p>
+        <i></i><i></i><i></i><i></i>
+    </div>
+    <div class="about">
+        <p>COMPANY</p>
+        <p>About Us</p>
+        <p>Careers</p>
+        <p>Affiliates</p>
+        <p>Blog</p>
+        <p>Contact Us</p>
+    </div>
+    <div class="shop">
+        <p>SHOP</p>
+        <p>New Arrivals</p>
+        <p>Men</p>
+        <p>Women</p>
+        <p>Shop All</p>
+    </div>
+    <div class="help">
+        <p>HELP</p>
+        <p>Customer Service</p>
+        <p>My Account</p>
+        <p>Find a Store</p>
+        <p>Leagal & Privacy</p>
+        <p>Contact</p>
+        <p>Gift Card</p>
+    </div>
+    <div class="subscribe">
+        <p>SUBSCRIBE</p>
+        <p>Be the first to get the latest news about trends, promotions, and much more!</p>
+        <br>
+        <input type="email">
+        <p>Secure payments</p>
+        <i></i><i></i><i></i><i></i>
+
+    </div>
+</div>
+<div class="lavender-section" style="display: flex; flex: 1; border: 1px 0 0 0; border-color: rgb(97, 97, 97);height: 10vh; background-color:rgb(194, 194, 194); padding-left: 10%; padding-right: 10%; justify-content: space-between; align-items: center; ">
+    <p>©2023 Uomo</p>
+    <p style=" text-align: right; justify-content: right;">Language <select name="" id="" placeholder="choose language"; style="width: 20vw; background-color: transparent; border: none; height: 2rem; font-size: 1rem; padding-left: 1rem;">
+        <option value="">hindi</option>
+    </select>
+    </p>
+    <p style=" color: gray;">Currency <select name="" id="" placeholder="choose language"; style="width: 20vw; background-color: transparent; border: none; height: 2rem; font-size: 1rem; padding-left: 1rem;">
+        <option value="">us dollar</option>
+    </select>
+    </p>
+</div>
+</body>
+</html>
